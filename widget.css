@@ -1,0 +1,36 @@
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #9d8189;
+    color: #ffe5d9;
+    flex-shrink: 2;
+    flex-basis: 200px;
+    flex-grow: 1;
+    padding: 20px;
+    font-family: helvetica;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.box:hover{
+    background-color:#ffb4a2 ;
+    color: #6d6875;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+.middle {
+    background-color:#6d6875 ;
+    flex-shrink: 1;
+}

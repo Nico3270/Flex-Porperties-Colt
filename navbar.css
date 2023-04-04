@@ -1,0 +1,88 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color:#fdf0d5;
+    color: #669bbc;
+    flex-wrap: wrap;
+}
+
+a {
+    color: #003049;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 5px;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+i {
+    margin-right: 10px;
+}
+
+a:hover {
+    transform: scale(1.1) translate(10px);
+    -webkit-transform: scale(1.1) translate(10px);
+    -moz-transform: scale(1.1) translate(10px);
+    -ms-transform: scale(1.1) translate(10px);
+    -o-transform: scale(1.1) translate(10px);
+    color: #780000;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 920px){
+    nav {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 420px){
+    nav {
+        flex-direction: column;
+    }
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.box-1 {
+    background-color: #003049;
+    align-self:flex-end;
+
+}
+.box-2 {
+    background-color: #4aa424;
+}
+.box-3 {
+    background-color: #a76e23;
+}
+.box-4 {
+    background-color: #b8166f;
+    order: 2;
+    flex-basis: auto;
+
+}
+.box-5 {
+    background-color: #740202;
+    order: -1;
+    flex-shrink: 1.5;
+    
+    
+}
+.box {
+    flex-basis: 800px;
+    color: #fdf0d5;
+    text-align: center;
+}
